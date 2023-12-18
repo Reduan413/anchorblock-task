@@ -5,6 +5,7 @@ import HomePage from "./HomePage";
 import SignIn from "./SignIn";
 import Users from "./Users";
 import RequireAuth from "./RequireAuth";
+import NotFound from "./NotFound";
 
 const RoutePage = () => {
   return (
@@ -21,6 +22,7 @@ const RoutePage = () => {
         />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/signin" element={<SignIn />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );
